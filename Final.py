@@ -9,9 +9,19 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+#from db import MainWindow123
+import sys
 
 
 class Ui_MainWindow(object):
+    
+   
+    #def openWindow(self):
+        #self.openwndw = MainWindow123()
+        #self.openwndw.show()
+   
+
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1062, 877)
@@ -1327,12 +1337,16 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.actionNew = QtWidgets.QAction(MainWindow)
         self.actionNew.setObjectName("actionNew")
+        
+       # self.actionNew.triggered.connect(self.openWindow)
         self.actionOpen = QtWidgets.QAction(MainWindow)
         self.actionOpen.setObjectName("actionOpen")
+        #self.actionNew.triggered.connect(self.openWindow)
         self.actionSave = QtWidgets.QAction(MainWindow)
         self.actionSave.setObjectName("actionSave")
         self.actionExit = QtWidgets.QAction(MainWindow)
         self.actionExit.setObjectName("actionExit")
+        #self.actionNew.triggered.connect(self.close())
         self.actionRun = QtWidgets.QAction(MainWindow)
         self.actionRun.setObjectName("actionRun")
         self.actionStop = QtWidgets.QAction(MainWindow)
@@ -1561,6 +1575,10 @@ class Ui_MainWindow(object):
         self.actionPlay.setText(_translate("MainWindow", "Play"))
         self.actionHelp.setText(_translate("MainWindow", "Help"))
         self.actionAbout.setText(_translate("MainWindow", "About"))
+
+
+    
+    
 
 
 if __name__ == "__main__":
